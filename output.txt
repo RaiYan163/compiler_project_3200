@@ -1,0 +1,26 @@
+
+Header file found :
+ORDER hello
+
+Header file found :
+ORDER high
+
+Header file found :
+ORDER bellissimo
+
+CODESTART function started
+Integer Declaration.
+ab
+aac
+de
+fg
+cc
+
+Variable Declaration
+
+
+
+
+Float Declaration.
+ab
+Error!! Variable Already Declared
