@@ -5,9 +5,49 @@ ORDER bellissimo
 BANQUET:
 START
 
-ICE ab, aac, de, fg, cc;
+ICE vary, varu, vari;
 
-FRIES ab;
+
+vary = 23;
+vari = 33;
+
+varu = (vary PLUS vari) MINUS 13;
+
+
+varu = 23 MINUS 33;
+varu = varu MUL vary;
+varu = varu MUL 3;
+##
+varu = varu MUL 0;
+varu = 42;
+
+vary = 0;
+vari = varu DIV vary;
+##
+
+23;
+
+vary = 54;
+
+vary = vary DIV 3;
+
+vary = vary MOD 5;
+
+#vary = 23 MOD 0;
+
+vary;
+varu;
+
+varu  = 2;
+
+vari = vari MUL (varu ^ vary);
+## WRONG HERE, FIX IT ASAP
+vari = vari MUL (varu ^ blah);
+##
+
+(vary < varu);
+
+
 
 
 

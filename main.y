@@ -24,7 +24,7 @@
 	}
 
 	int addNewVal(char *str){
-		if(isDeclared(str)!=0)return 0;
+		if(isDeclared(str)!=0){return 0;printf("\nundeclared variable assigned\n");}
 		strcpy(variables[idx].name ,str);
 		val[idx]=0;
 		idx++;
@@ -53,6 +53,7 @@
 }
 %token<val>NUMBER
 %type<val>statement
+%type<val>expression
 %token<text>VAR
 %token IF PLUS MINUS MUL DIV MOD ELSE ELSEIF ARRAY MAINFUNC INT FLOAT CHAR START END LOOP WHILE ODDEVEN SHOW SIN COS FACTORIAL CASE DEFAULT SWITCH
 %nonassoc IFX
@@ -75,6 +76,20 @@ line: /* NULL */
 
 statement: ';'
     | declaration ';'
+
+    | expression ';'    {
+                            printf("\nValue of the variable: %d\n", $1);
+                            $$ = $1;
+                            printf("\n\n\n");
+
+                        }
+
+    | VAR '=' expression ';' {
+        printf("\nValue of the variable: %d\n", $3);
+        setVal($1, $3);
+        $$=$3;
+        printf("\n\n\n");
+    }
     ;
 
 declaration: TYPE ID1 {printf("\nVariable Declaration\n");
@@ -106,7 +121,52 @@ ID1  : ID1 ',' VAR {
         ;
 
 
+expression: NUMBER  { $$ = $1; }
+    | VAR  { $$ = getVal($1); }
 
+    | expression PLUS expression { printf("\n Addition: %d + %d = %d \n", $1, $3, $1 + $3); $$ = $1 + $3;}
+
+    | expression MINUS expression { printf("\n Subtraction: %d - %d=%d \n", $1, $3, $1 - $3); $$ = $1 - $3;}
+
+    | expression MUL expression   { printf("\nMultiplication: %d * %d = %d\n", $1, $3, $1*$3); $$ = $1 * $3; }
+
+    | expression DIV expression   { if($3 != 0 ){
+                                                    printf("\nDivision :%d / %d = %d \n", $1, $3, $1/$3);
+                                                    $$ = $1 / $3;
+
+                                                }
+                                            else{
+                                                  $$ = 0;
+                                                  printf("Error!!! Division by zero. (not valid) \n");
+                                                  exit(-1);
+                                            }
+
+                                    }
+    
+    | expression MOD expression   { if($3 != 0 ){
+
+                                                    printf("\nMod :%d MOD %d = %d \n", $1, $3, $1 % $3);
+                                                    $$ = $1 % $3;
+
+                                            }
+                                            else{
+                                                $$ = 0;
+                                                printf("\nError!! Mod by zero, undefined!\n");
+                                                exit(-1);
+                                            }
+
+                                    
+                                }
+    
+    | expression '<' expression {  printf("\n Less than: %d < %d: %d \n", $1, $3, $1 < $3); $$ = $1 < $3 ; }
+
+    | expression '>' expression {  printf("\n Greater than: %d > %d : %d \n", $1, $3, $1 > $3); $$ = $1 > $3 ; }
+
+    | '(' expression ')'    {   $$ = $2; }
+
+    | expression '^' expression {  printf("\nPower : %d ^ %d = %d \n", $1, $3, pow($1, $3)); $$ = pow($1, $3); }
+
+    ;
 
 %%
 

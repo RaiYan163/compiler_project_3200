@@ -809,22 +809,22 @@ YY_RULE_SETUP
 case 26:
 YY_RULE_SETUP
 #line 40 "main.l"
-{printf("\nCODESTART function started\n"); return MAINFUNC; }
+{printf("\nMain function started\n"); return MAINFUNC; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
 #line 41 "main.l"
-{printf("\nSingle line comment found :: ");ECHO;printf("\n");}
+{printf("\nSingle line comment.");ECHO;printf("\n");}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
 #line 42 "main.l"
-{printf("\nMulti line comment found :: ");ECHO;printf("\n");}
+{printf("\nMulti Line Comment.");ECHO;printf("\n");}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
 #line 43 "main.l"
-{printf("\nHeader file found :\n");ECHO;printf("\n");}
+{printf("Header file found :\n");ECHO;printf("\n");}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP

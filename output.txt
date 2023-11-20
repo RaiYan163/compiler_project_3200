@@ -1,26 +1,153 @@
-
 Header file found :
 ORDER hello
-
 Header file found :
 ORDER high
-
 Header file found :
 ORDER bellissimo
 
-CODESTART function started
+Main function started
 Integer Declaration.
-ab
-aac
-de
-fg
-cc
+vary
+varu
+vari
 
 Variable Declaration
 
 
 
 
-Float Declaration.
-ab
-Error!! Variable Already Declared
+vary
+
+Value of the variable: 23
+
+
+
+vari
+
+Value of the variable: 33
+
+
+
+varu
+vary
+vari
+
+ Addition: 23 + 33 = 56 
+
+ Subtraction: 56 - 13=43 
+
+Value of the variable: 43
+
+
+
+varu
+
+ Subtraction: 23 - 33=-10 
+
+Value of the variable: -10
+
+
+
+varu
+varu
+vary
+
+Multiplication: -10 * 23 = -230
+
+Value of the variable: -230
+
+
+
+varu
+varu
+
+Multiplication: -230 * 3 = -690
+
+Value of the variable: -690
+
+
+
+
+Multi Line Comment.##
+varu = varu MUL 0;
+varu = 42;
+
+vary = 0;
+vari = varu DIV vary;
+##
+
+Value of the variable: 23
+
+
+
+vary
+
+Value of the variable: 54
+
+
+
+vary
+vary
+
+Division :54 / 3 = 18 
+
+Value of the variable: 18
+
+
+
+vary
+vary
+
+Mod :18 MOD 5 = 3 
+
+Value of the variable: 3
+
+
+
+
+Single line comment.#vary = 23 MOD 0;
+vary
+
+Value of the variable: 3
+
+
+
+varu
+
+Value of the variable: -690
+
+
+
+varu
+
+Value of the variable: 2
+
+
+
+vari
+vari
+varu
+vary
+
+Power : 2 ^ 3 = 0 
+
+Multiplication: 33 * 8 = 264
+
+Value of the variable: 264
+
+
+
+
+Multi Line Comment.## WRONG HERE, FIX IT ASAP
+vari = vari MUL (varu ^ blah);
+##
+vary
+varu
+
+ Less than: 3 < 2: 0 
+
+Value of the variable: 0
+
+
+
+End of main function

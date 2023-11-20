@@ -37,9 +37,9 @@ CommentMulti "##"[^##]*"##"
 "MUL"           {return MUL;}
 "DIV"           {return DIV;}
 "MOD"           {return MOD;}
-"BANQUET"	   {printf("\nCODESTART function started\n"); return MAINFUNC; }
-{Comment}		{printf("\nSingle line comment found :: ");ECHO;printf("\n");}
-{CommentMulti}		{printf("\nMulti line comment found :: ");ECHO;printf("\n");}
+"BANQUET"	   {printf("\nMain function started\n"); return MAINFUNC; }
+{Comment}		{printf("\nSingle line comment.");ECHO;printf("\n");}
+{CommentMulti}		{printf("\nMulti Line Comment.");ECHO;printf("\n");}
 {header}  				{printf("Header file found :\n");ECHO;printf("\n");}
 [-+/*<>=,():;%^]     {	return yytext[0];	}
 {variable}	    {ECHO;printf("\n"); strcpy(yylval.text,yytext); return	VAR; }
