@@ -3,52 +3,114 @@ ORDER high
 ORDER bellissimo
 
 BANQUET:
+SOUP
+
+# Raiyan Ashraf. Roll : 1907023
+
+FRIES vary, varu, vari @
+
+vary = 23 @
+
+vari = 12 @
+
+varu = 5 @
+
+
+SERVE <& We are the champions, My friend !!&>@
+
+
+IF< vary EQ vari>
+START
+	20 PLUS 20 @
+END
+ELSEIF< vari LES varu >
+	START
+ 	IF< 10 GRT 2 >
+		START
+			1 MUL 10 @
+		END
+	ELSE
+		START
+		40 PLUS 6 @
+		END
+
+	END
+ELSE
+START
+	10 MUL 10 @
+END
+
+IF< vary EQ vari>
+START
+	20 PLUS 20 @
+END
+IF < 2 NEQ 3 >
+START
+	SERVE <& Bingo!! &>@
+END
+
+
+#ICE vary@
+
+ICE test1, test2, test3@
+
+CREAM yummy @
+
+PLATTER FRIES aray1 <23> @
+
+test1 = 2 @
+test2 = 15 @
+test3 = 3 @
+
+ICE x@
+
+x = 10 @
+
+DONUT < init = test1 , untl = test2 , step = test3 >
 START
 
-ICE vary, varu, vari;
-
-
-vary = 23;
-vari = 33;
-
-varu = (vary PLUS vari) MINUS 13;
-
-
-varu = 23 MINUS 33;
-varu = varu MUL vary;
-varu = varu MUL 3;
-##
-varu = varu MUL 0;
-varu = 42;
-
-vary = 0;
-vari = varu DIV vary;
-##
-
-23;
-
-vary = 54;
-
-vary = vary DIV 3;
-
-vary = vary MOD 5;
-
-#vary = 23 MOD 0;
-
-vary;
-varu;
-
-varu  = 2;
-
-vari = vari MUL (varu ^ vary);
-## WRONG HERE, FIX IT ASAP
-vari = vari MUL (varu ^ blah);
-##
-
-(vary < varu);
-
-
-
-
+	 x = 123 MUL 21 @
 
 END
+
+x = x PLUS 12 @
+SERVE <x> @
+
+
+
+
+
+
+FEAST < 3 LES 9 >
+START
+	5 MUL 2 @
+END
+
+##
+CHOOSE<2>
+START
+CASE 1: 30 PLUS 40 @
+
+CASE 2: 45 MINUS 23 @
+
+DEFAULT: 83 MINUS 23 @
+END
+##
+
+test1 = 5 @
+
+FACTORIAL < test1 MINUS 1 > @
+ODDEVEN < test1 PLUS 3 > @
+
+ONE+ test1 @
+ONE- test2 @
+
+test3 = 121 @
+
+SERVE <SQRT test3> @
+SERVE <& SQRT test3, Hurrahhh!! &> @
+
+
+
+
+DESSERT

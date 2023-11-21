@@ -6,7 +6,9 @@ Header file found :
 ORDER bellissimo
 
 Main function started
-Integer Declaration.
+
+Single line comment.# Raiyan Ashraf. Roll : 1907023
+Float Declaration.
 vary
 varu
 vari
@@ -24,130 +26,262 @@ Value of the variable: 23
 
 vari
 
-Value of the variable: 33
+Value of the variable: 12
 
 
 
 varu
+
+Value of the variable: 5
+
+
+
+The String is printed as:  We are the champions, My friend !!
+
 vary
 vari
 
- Addition: 23 + 33 = 56 
+ Equal : 23 == 12 : 0 
 
- Subtraction: 56 - 13=43 
+ Addition: 20 + 20 = 40 
 
-Value of the variable: 43
+Value of the variable: 40
 
 
 
+vari
 varu
 
- Subtraction: 23 - 33=-10 
+ Less than: 12 < 5: 0 
 
-Value of the variable: -10
+ Greater than: 10 > 2 : 0 
 
+Multiplication: 1 * 10 = 10
 
-
-varu
-varu
-vary
-
-Multiplication: -10 * 23 = -230
-
-Value of the variable: -230
-
-
-
-varu
-varu
-
-Multiplication: -230 * 3 = -690
-
-Value of the variable: -690
+Value of the variable: 10
 
 
 
 
-Multi Line Comment.##
-varu = varu MUL 0;
-varu = 42;
+ Addition: 40 + 6 = 46 
 
-vary = 0;
-vari = varu DIV vary;
-##
+Value of the variable: 46
 
-Value of the variable: 23
+
+
+
+ Value of expression in IF: 10
+
+
+
+
+Multiplication: 10 * 10 = 100
+
+Value of the variable: 100
+
+
+
+Value of expression in last else block: 100
 
 
 
 vary
+vari
 
-Value of the variable: 54
+ Equal : 23 == 12 : 100 
 
+ Addition: 20 + 20 = 40 
 
-
-vary
-vary
-
-Division :54 / 3 = 18 
-
-Value of the variable: 18
-
-
-
-vary
-vary
-
-Mod :18 MOD 5 = 3 
-
-Value of the variable: 3
+Value of the variable: 40
 
 
 
 
-Single line comment.#vary = 23 MOD 0;
-vary
-
-Value of the variable: 3
+ The Given condition in IF is Wrong.
 
 
 
-varu
 
-Value of the variable: -690
+ Not Equal : 2 > 3 : 40 
+The String is printed as:  Bingo!! 
+
+
+Single line comment.#ICE vary@
+
+Inside of IF block
 
 
 
-varu
+Integer Declaration.
+test1
+test2
+test3
+
+Variable Declaration
+
+
+
+
+Char declaration
+yummy
+
+Variable Declaration
+
+
+
+
+Float Declaration.
+aray1
+ARRAY Declaration
+Size of the ARRAY is : 23
+test1
 
 Value of the variable: 2
 
 
 
-vari
-vari
-varu
-vary
+test2
 
-Power : 2 ^ 3 = 0 
-
-Multiplication: 33 * 8 = 264
-
-Value of the variable: 264
+Value of the variable: 15
 
 
 
+test3
 
-Multi Line Comment.## WRONG HERE, FIX IT ASAP
-vari = vari MUL (varu ^ blah);
+Value of the variable: 3
+
+
+
+Integer Declaration.
+x
+
+Variable Declaration
+
+
+
+
+x
+
+Value of the variable: 10
+
+
+
+test1
+test2
+test3
+x
+
+Multiplication: 123 * 21 = 2583
+
+Value of the variable: 2583
+
+
+
+Inside loop execution
+value of the  i: 2 expression value : 2583
+
+value of the  i: 5 expression value : 2583
+
+value of the  i: 8 expression value : 2583
+
+value of the  i: 11 expression value : 2583
+
+value of the  i: 14 expression value : 2583
+
+
+
+
+x
+x
+
+ Addition: 2583 + 12 = 2595 
+
+Value of the variable: 2595
+
+
+
+x
+The Expression is printed as: 2595
+
+Multiplication: 5 * 2 = 10
+
+Value of the variable: 10
+
+
+
+Executing While Loop.
+Iterating loop: 3   
+
+Iterating loop: 4   
+
+Iterating loop: 5   
+
+Iterating loop: 6   
+
+Iterating loop: 7   
+
+Iterating loop: 8   
+
+
+
+
+Multi Line Comment.##
+CHOOSE<2>
+START
+CASE 1: 30 PLUS 40 @
+
+CASE 2: 45 MINUS 23 @
+
+DEFAULT: 83 MINUS 23 @
+END
 ##
-vary
-varu
+test1
 
- Less than: 3 < 2: 0 
-
-Value of the variable: 0
+Value of the variable: 5
 
 
+
+test1
+
+ Subtraction: 5 - 1=4 
+
+FACTORIAL declaration
+FACTORIAL of 4 is : 24
+
+
+
+
+test1
+
+ Addition: 5 + 3 = 8 
+Detect Odd or Even 
+Number : 8 is -> Even
+
+
+
+test1
+value is incremented from 5 to 6
+
+Value of the variable: 6
+
+
+
+test2
+value is decremented from 15 to 14
+
+Value of the variable: 14
+
+
+
+test3
+
+Value of the variable: 121
+
+
+
+test3
+square root of 121 is  11.000000 
+The Expression is printed as: 11
+The String is printed as:  SQRT test3, Hurrahhh!! 
 
 End of main function

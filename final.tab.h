@@ -41,32 +41,55 @@
    enum yytokentype {
      NUMBER = 258,
      VAR = 259,
-     IF = 260,
-     PLUS = 261,
-     MINUS = 262,
-     MUL = 263,
-     DIV = 264,
-     MOD = 265,
-     ELSE = 266,
-     ELSEIF = 267,
-     ARRAY = 268,
-     MAINFUNC = 269,
-     INT = 270,
-     FLOAT = 271,
-     CHAR = 272,
-     START = 273,
-     END = 274,
-     LOOP = 275,
-     WHILE = 276,
+     STRING = 260,
+     CASE = 261,
+     SWITCH = 262,
+     DEFAULT = 263,
+     PRINT = 264,
+     START = 265,
+     END = 266,
+     IF = 267,
+     ELSE = 268,
+     ELSEIF = 269,
+     LOOP = 270,
+     WHILE = 271,
+     INT = 272,
+     CHAR = 273,
+     FLOAT = 274,
+     ARRAY = 275,
+     FACTORIAL = 276,
      ODDEVEN = 277,
-     SHOW = 278,
-     SIN = 279,
-     COS = 280,
-     FACTORIAL = 281,
-     CASE = 282,
-     DEFAULT = 283,
-     SWITCH = 284,
-     IFX = 285
+     SIN = 278,
+     COS = 279,
+     TAN = 280,
+     LOG = 281,
+     LN = 282,
+     SQRT = 283,
+     PLUS = 284,
+     MINUS = 285,
+     MUL = 286,
+     DIV = 287,
+     MOD = 288,
+     AND = 289,
+     OR = 290,
+     NOT = 291,
+     MAINFUNC = 292,
+     MAINFUNCSTART = 293,
+     MAINFUNCEND = 294,
+     ENDLINE = 295,
+     EQ = 296,
+     LEQ = 297,
+     GEQ = 298,
+     LES = 299,
+     GRT = 300,
+     INC = 301,
+     DEC = 302,
+     INIT = 303,
+     UNTL = 304,
+     STEP = 305,
+     NEQ = 306,
+     IFX = 307,
+     GRQ = 308
    };
 #endif
 
@@ -77,7 +100,7 @@ typedef union YYSTYPE
 {
 
 /* Line 1676 of yacc.c  */
-#line 50 "main.y"
+#line 67 "final.y"
 
 	char text[1009];
 	int val;
@@ -85,7 +108,7 @@ typedef union YYSTYPE
 
 
 /* Line 1676 of yacc.c  */
-#line 89 "main.tab.h"
+#line 112 "final.tab.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
